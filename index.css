@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+  html {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%
+  }
+  #content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    text-align:center;
+    color: black;
+  }
+  body {
+    cursor: url("images/buttons/mouse.png"),auto;
+    margin: 0;
+    font-family: Arial;
+    background-image: url("images/LandscapeArt.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 5vw;
+  }
+
+  @font-face{
+    font-family: Genshin;
+    src:url("zh-cn.ttf");
+  }
+
+
+  #title{
+    display: flex;
+    justify-content: center;
+    margin: 0vw 10vw 0vh 10vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    height: 70%
+  }
+  #title_img{
+    position: absolute;
+    bottom: 0px;
+    animation: slidein 3s;
+    animation-fill-mode: forwards;
+    width: 50%;
+  }
+  @keyframes slidein {
+    from {bottom: 0%;opacity: 0;}
+    to {bottom: 50%;opacity:1;}
+  }
+
+  #start{
+    position: absolute;
+    bottom: 0px;
+    animation: slidein2 3s;
+    animation-fill-mode: both;
+    width: 37vmin;
+    font-size: 2.6vh;
+    padding: 2.5vmin;
+    border: .5vh solid rgba(227, 223, 255, 0.5);
+    background:  rgba(255, 255, 255, 0.644);
+    border-radius: 2%;
+    cursor: pointer;
+    color: rgb(65, 49, 172);
+    margin-top: 5vh;
+    font-family: Genshin;
+    font-weight: bold;
+    font-style: oblique;
+}
+ @keyframes slidein2 {
+    from {bottom: 0%; opacity: 0;}
+    to {bottom: 35%;opacity: 1;}
+  }
+
+
+   #start:hover{
+     cursor: url("images/buttons/mouse.png"),auto;
+    background-color:rgba(122, 103, 247, 0.5);
+     color:white;
+  }

@@ -1,0 +1,150 @@
+html {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    }
+    .container {
+      display: flex;
+      background-image: url("images/summon background.jpg");
+      cursor: url("images/buttons/mouse.png"),auto;
+      background-attachment:fixed;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+    }
+    @font-face{
+      font-family: Genshin;
+      src:url("zh-cn.ttf");
+    }
+
+  .gacha_card {
+    height: 450px;
+    margin-top: 7%;
+    width: 300px;
+    padding-left: 0.5%;
+    border: 1px solid white;
+    border-radius: 15px;
+    animation: slidein 3s;
+    margin-left: 100%;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+  }
+  @keyframes slidein {
+    from {margin-left: 100%;opacity: 0;}
+    to {margin-left: 0%;opacity:1;}
+  }
+  #viewmore{
+    position: absolute;
+    font-family:Genshin;
+    font-size: 20px;
+    color: white;
+    margin-left: 37%;
+    margin-right: 60%;
+    width: 100%;
+    margin-top: 100%;
+    animation: slideup 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+  #simulationinfo, #gameinfo{
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 15%;
+    font-size: 20px;
+    width: 100%
+    color: white;
+    font-family: Genshin;
+
+  }
+  #simulationinfo{
+    color: white;
+  }
+  #gameinfo{
+    margin-top: 80%;
+    margin-left: 0%;
+    color: white;
+  }
+  .header{
+    position: absolute;
+    font-size: 25px;
+    width: 100%;
+    color: purple;
+    font-family: Genshin;
+    margin-left: 30%;
+  }
+  #back{
+    cursor: url("images/buttons/mouse.png"),auto;
+    position: absolute;
+    margin-left: 80%;
+    width: 37vmin;
+    font-size: 2.6vh;
+    padding: 2.5vmin;
+    border: .5vh solid rgba(227, 223, 255, 0.5);
+    background:  rgba(255, 255, 255, 0.644);
+    border-radius: 2%;
+    cursor: pointer;
+    color: rgb(65, 49, 172);
+    margin-top: 132%;
+    font-family: Genshin;
+    font-weight: bold;
+    font-style: oblique;
+}
+.back:hover{
+  cursor:url("images/buttons/mouse.png"),auto;
+}
+.active:hover{
+  cursor:url("images/buttons/mouse.png"),auto;
+}
+  #gameheader{
+    cursor: url("images/buttons/mouse.png"),auto;
+    margin-top: 75%;
+    margin-left: 0%;
+  }
+  #simulationheader,#simulationpity{
+    cursor: url("images/buttons/mouse.png"),auto;
+    margin-top: 60%;
+    font-size: 25px;
+    width: 100%;
+    margin-left: 30%;
+  }
+  #simulationpity{
+    cursor: url("images/buttons/mouse.png"),auto;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+  @keyframes slideup{
+      from {display: none;opacity: 0;}
+      to { display: block;margin-top: 40%;opacity:1;}
+  }
+  #img1{
+    content:url("images/summons/banner five stars/Ayato.png");
+    animation-delay: 0s;
+  }
+  #img2{
+    content:url("images/summons/banner four stars/Yunjin.png");
+  }
+  #img3{
+    content:url("images/summons/three stars/15.png");
+  }
+  #img4{
+    content:url("images/summons/three stars/14.png");
+  }
+  #img5{
+    content:url("images/summons/three stars/13.png");
+  }
+  #img6{
+    content:url("images/summons/three stars/12.png");
+  }
+  #img7{
+    content:url("images/summons/three stars/11.png");
+  }
+  #img8{
+    content:url("images/summons/three stars/10.png");
+  }
+  #img9{
+    content:url("images/summons/three stars/9.png");
+  }
+  #img10{
+    content:url("images/summons/three stars/8.png");
+  }

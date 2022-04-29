@@ -1,0 +1,33 @@
+function calculate_primos(primos,plan){
+    const chara_primo = 28,800
+    //Store all possible plans 
+    var welkin_moon = 0; 
+    var battle_pass = 0; 
+    //Store all user info 
+    var user_cur_primogems = primos; 
+    const user_plans = plan; 
+    var total_primos = 0;
+    //Store all events along with primo values
+    const events = new Map(["Maintanence",600],["Story quests (Yae and Shogun)",120],["Hyakunin Ikki",420],["Of a Drink Dreaming",420],["Divine Ingenuity",420],["Three Realms",420],["Login",480],["Monthly reset",1600], ["Spiral Abyss",600])
+    var all_event_primos = events.entries; 
+    
+    //Set up user plan
+    for (let i = 0; i < user_plans.length; i++){ 
+        if user_plans[i].equals("Welkin Moon"){
+            welkin_moon = 3000; 
+        }
+        if user_plans[i].equals("Battle Pass"){
+            battle_pass = 2280; 
+        } 
+    } 
+    
+    //Calculating final primogems needed
+    
+    //Calculating total primogems from events
+    for( let j = 0; j < all_event_primos.length; j++){ 
+        total_primos += all_event_primos[j]; 
+    } 
+    
+    return chara_primo - (user_cur_primogems + total_primos + welkin_moon + battle_pass)
+    
+} 

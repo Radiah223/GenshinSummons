@@ -1,0 +1,244 @@
+html {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    }
+      .container {
+        display: flex;
+        cursor: url("images/buttons/mouse.png"),auto;
+        background-image: url("images/banners/GachaBackground.jpg");
+        background-attachment:fixed;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+      }
+      @font-face{
+        font-family: Genshin;
+        src:url("zh-cn.ttf");
+      }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 80%;
+}
+.topCenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 10%;
+}
+
+.topRight{
+  position: absolute;
+  margin-left: 77%;
+  margin-right: 10%;
+  width: 2.75%;
+  height: 5%;
+}
+      .mySlides {display: none}
+img {vertical-align:middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: 100%;
+  position:relative;
+  margin-bottom: 80%;
+  margin-left:7%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: url("images/buttons/mouse.png"),auto;
+  position: relative;
+  bottom: 45%;
+  width: auto;
+  padding: 16px;
+  margin-bottom: 65%;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s linear;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+#summon_btn{
+    cursor: url("images/buttons/mouse.png"),auto;
+    position: absolute;
+    margin-left: 75%;
+    margin-right: 10%;
+    margin-top : 45.5%;
+    background-color: transparent;
+    border: 0;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-bottom: 65%;
+  margin-left : 90%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#textfield {
+  cursor: url("images/buttons/mouse.png"),auto;
+  font-family: Genshin;
+  margin-left: 80%;
+  margin-bottom: 70%;
+  margin-top: .5%;
+  margin-right: 10%;
+  position: absolute;
+  border: 1;
+  border-radius: 0.8;
+  border-color: purple;
+  height: 200px;
+  color: white;
+}
+#tutorial{
+  position: absolute;
+  margin-left: 10%;
+  font-size: 20px;
+  margin-top: 55%;
+  font-family:Genshin;
+  color: black;
+}
+#para_tutorial{
+  margin-left: 0%;
+}
+#title{
+    font-size: 40px;
+    margin-left: 30%;
+}
+#primo{
+  font-family: Genshin;
+  background-color: rgba(221, 160, 221, 0.26);
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+#pitytext{
+
+  position: absolute;
+  margin-right: 90%;
+  border: 1;
+  border-radius: 0.8;
+  border-color: purple;
+  height: 200px;
+  color: white;
+}
+#pity{
+    background-color: rgba(221, 160, 221, 0.26);
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.active:hover {
+  background-color: #717171;
+}
+
+
+/* The popup form - hidden by default */
+.popup-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.popup-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  top: 23px;
+  left: 28px;
+  width: 280px;
+}
+
+/* Full-width input fields */
+.form-container{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease dimensions*/
+@media only screen and (max-width: 780px) {
+  div.auto-style16 {
+    height: 5px;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  div.auto-style16 {
+    height: 55px;
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  div.auto-style16 {
+    height: 95px;
+    padding-top: 10px;
+  }
+}
+    #banner1 {
+        background-image: url("images/banners/RaidenBanner\ .png");
+    }
