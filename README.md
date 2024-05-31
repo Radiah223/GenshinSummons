@@ -1,5 +1,5 @@
 <h1>Genshin Summoning Simulator</h1>
-Genshin Summoning Simulator that tracks the amount of wishes the user performs to summon a character or weapon in Genshin Impact. Based on the number of wishes, the simulator calculates the amount of primogems the user has/needs to spend to summon a character and how many dollars it corresponds to. 
+Implemented Genshin Summoning Simulator using DOM-API and vanilla Javascript that tracks the amount of wishes the user performs to summon a character or weapon in Genshin Impact. Based on the number of wishes, the simulator calculates the amount of primogems the user has/needs to spend to summon a character and how many dollars it corresponds to. 
 <h2>Interface</h2>
 <ul> 
   <li>Overall design: HTML/CSS </li>
